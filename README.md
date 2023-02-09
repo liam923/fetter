@@ -46,4 +46,11 @@ For more information, see:
 
 ## Using the Plugin
 
-
+To use the plugin, first you must add the following external resolver to your `build.sbt``:
+```scala
+externalResolvers += "fetter resolver" at "https://maven.pkg.github.com/liam923/fetter"
+```
+Then, add the compiler plugin to the `build.sbt` file:
+```scala
+addCompilerPlugin("fetter" %% "fetter" % "1.0.0")
+```

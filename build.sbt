@@ -1,6 +1,9 @@
 ThisBuild / version := "1.0.0"
 ThisBuild / sbtPlugin := false
 
+ThisBuild / githubOwner := "liam923"
+ThisBuild / githubRepository := "fetter"
+
 lazy val root = (project in file("."))
   .settings(
     name := "fetter",

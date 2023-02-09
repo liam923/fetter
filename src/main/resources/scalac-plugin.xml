@@ -1,0 +1,4 @@
+<plugin>
+  <name>fetter</name>
+  <classname>fetter.Fetter</classname>
+</plugin>

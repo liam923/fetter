@@ -14,7 +14,7 @@ def foo(person: Option[Person]) = {
   // desugars to: person.map(_.name)
   val parent: Option[Person] = person??>parent
   // desugars to: person.flatMap(_.name)
-  val grandparentName: Option[String] = person??>parent?>>parent?>name
+  val grandparentName: Option[String] = person??>parent??>parent?>name
   // desugars to: person.flatMap(_.parent.flatMap(_.parent.map(_.name)))
 }
 ```
